@@ -1,0 +1,253 @@
+body {
+    overflow: hidden;
+    background-color: #B1B0B0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 133vh;
+}
+
+.navbar-custom {
+    background-color: #B1B0B0;
+    color: white;
+    height: 35px;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0px !important;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    font-family: 'Inter';
+    font-size: medium;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+
+.mainBody {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.sidePane {
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    height: auto;
+}
+
+.sidePaneControlBar {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.sidePaneControlBarElementlbl {
+    margin: 10px 60px 10px 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+.sidePaneControlBarElementBtn {
+    margin: 10px 2px 10px 5px;
+    font-family: 'Inter';
+    font-weight: 700;
+    background-color: #B1B0B0 !important;
+    color: white !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);
+    transition: .2s;
+    border: 1px solid #B1B0B0 !important;
+}
+
+.sidePaneControlBarElementBtn:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.sidePaneControlBarElementBtn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.inputField-Custom {
+    width: 100% !important;
+    height: 40px;
+    margin-top: 5px !important;
+    margin-left: 7px !important;
+    border: 1px solid #B1B0B0 !important;
+}
+
+.inputField-Custom:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.bookListDiv {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.bookListDiv::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+    width: auto;
+    display: flex;
+}
+
+.list {
+    list-style-type: none;
+    width: 110%;
+    margin: 0px 0px 0px -40px !important;
+}
+
+.bookListElement {
+    white-space: nowrap;
+    /* prevent text from wrapping */
+    overflow: hidden;
+    /* hide overflowed text */
+    text-overflow: ellipsis;
+    /* show ellipsis when text overflows */
+    border-radius: 4% !important;
+    margin: 10px 10px 0px 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+    height: 50px;
+    width: 200px !important;
+    background-color: #E6E6E6 !important;
+    color: black !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);
+    transition: .2s;
+    border: 1px solid #E6E6E6 !important;
+}
+
+
+.bookListButtonText {
+    margin-left: 30px;
+}
+
+.bookListElement:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.bookListElement:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.detailsPane {
+    width: 100%;
+    height: auto;
+    background-color: #D9D9D9;
+    box-shadow: inset 2px 0 5px -2px #888;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.detailsPane::-webkit-scrollbar {
+    display: none;
+}
+
+.bookInfoAndControl {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: fit-content;
+}
+
+.bookControl {
+    left: 500px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookMainInfoDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 30px 10px 0px;
+}
+
+.bookMainInfo {
+    margin: 10px 0px 10px 10px;
+    color: black;
+    font-family: 'Inter';
+    font-size: medium;
+}
+
+.coverImage {
+    border-radius: 2%;
+    margin: 25px 25px 20px 35px;
+}
+
+.bookControlButton {
+    margin: 0px 10px 5px 10px;
+    width: 120px;
+    height: 45px;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 700;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);
+    transition: .2s;
+    border: 1px solid #E6E6E6 !important;
+}
+
+.bookControlButton:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.bookControlButton:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+#bookOpenButton {
+    background-color: #B1B0B0 !important;
+    border: 0px solid #B1B0B0 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bookRemoveButton {
+    background-color: #CE5555 !important;
+    border: 0px solid #CE5555 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#bookName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    width: 200px;
+}
+
+#bookAuthor {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    font-style: italic;
+    width: 200px;
+}
+
+.bookDetails {
+    margin: 25px 25px 20px 35px;
+    color: black;
+    font-family: 'Inter';
+    font-size: medium;
+}
+
+.divTitle {
+    font-weight: 700;
+}

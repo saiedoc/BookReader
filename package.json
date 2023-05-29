@@ -1,0 +1,27 @@
+{
+  "name": "bookreader",
+  "version": "1.0.0",
+  "description": "Book reader and eLibrary app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --watch main.js --ext js,html,css --exec electron ."
+  },
+  "author": "Saied Aussi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.1.2"
+  },
+  "dependencies": {
+    "epubjs": "^0.3.93",
+    "google-books-search": "^0.3.1",
+    "jquery": "^3.6.4",
+    "jszip": "^3.10.1",
+    "jszip-utils": "^0.1.0",
+    "natural": "^6.2.0",
+    "nodemon": "^2.0.22",
+    "pdfjs-dist": "^3.4.120",
+    "readium-js-viewer": "^0.0.0",
+    "uuid": "^9.0.0"
+  }
+}
