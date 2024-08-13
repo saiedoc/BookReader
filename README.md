@@ -1,12 +1,11 @@
 # BookReader
 
-**BookReader** is a versatile book reading and eLibrary application that allows you to read eBooks in various formats like EPUB and PDF, and manage your personal library. It includes features like natural language processing for better search and integration with Google Books.
+**BookReader** is a versatile book reading and eLibrary application that allows you to read eBooks in various formats like EPUB and PDF, and manage your personal library. It includes features like simple natural language processing for better search and integration with Google Books.
 
 ## Features
 
 - Support for EPUB and PDF formats
 - eLibrary management with search capabilities
-- Natural language processing for enhanced search
 - Integration with Google Books API for fetching book information
 - Cross-platform compatibility using Electron
 
